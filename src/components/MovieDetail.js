@@ -58,7 +58,7 @@ const styles = {
 
    dateTextStyle: {
       color: '#85A4AF',
-      fontSize: 15,
+      fontSize: 14,
       padding: 2,
    },
 
