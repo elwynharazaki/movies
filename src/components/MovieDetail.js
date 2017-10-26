@@ -2,18 +2,19 @@ import React from 'react';
 import { Image, Text, View } from 'react-native';
 
 import Card from './Card';
-import CardSection from './CardSection'
+import CardSection from './CardSection';
 
 const MovieDetail = (props) => {
-   console.log(props)
+   console.log(props);
+   
    return (
       <View>
          <Card>
             <CardSection>
                <View>
                  <Image
-                  style={{ width: 150, height: 75}}
-                  source={{ uri: `https://image.tmdb.org/t/p/w500${props.movies.backdrop_path}`}}
+                  style={{ width: 150, height: 75 }}
+                  source={{ uri: `https://image.tmdb.org/t/p/w500${props.movies.backdrop_path}` }}
                   />
                </View>               
 
@@ -23,13 +24,6 @@ const MovieDetail = (props) => {
                   <Text style={styles.dateTextStyle}>Ratings: {props.movies.vote_average}</Text>
                </View>
             </CardSection>
-
-            {/* <CardSection>
-               <Image
-                  style={{ height: 300, width: '100%' }}
-                  source={{ uri: `https://image.tmdb.org/t/p/w500${props.movies.image}` }}
-               />
-            </CardSection> */}
 
             <CardSection>
                <Image
@@ -46,7 +40,7 @@ const MovieDetail = (props) => {
          </Card>
       </View>
    );
-}
+};
 
 const styles = {
    titleTextStyle: {
@@ -67,7 +61,6 @@ const styles = {
       flexDirection: 'column',
       paddingLeft: 10
    }
-
 };
 
 export default MovieDetail;

@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
-import { Text, View } from 'react-native';
+import { View } from 'react-native';
 import axios from 'axios';
 
 import MovieDetail from './MovieDetail';
 
 class MovieList extends Component {
-   state = { movies:[] };
+   state = { movies: [] };
 
    componentWillMount() {
       console.log('Will Mount');
@@ -19,12 +19,12 @@ class MovieList extends Component {
    renderMovieList() {
       if (this.state.movies.length > 0) {
          return this.state.movies.map((movies, index) =>
-            <MovieDetail key={index} movies={movies}/>
+            <MovieDetail key={index} movies={movies} />
          );
       }
    }
    
-   render () {
+   render() {
       console.log('render movielist', this.state.movies);
       
       return (
@@ -33,6 +33,6 @@ class MovieList extends Component {
          </View>
       );
    }
-};
+}
 
 export default MovieList;
