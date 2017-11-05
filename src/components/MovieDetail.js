@@ -13,7 +13,7 @@ const MovieDetail = (props) => {
 				<CardSection>
 					<View>
 						<Image
-							style={{ width: 150, height: 75 }}
+							style={{ width: 130, height: 75 }}
 							source={{ uri: `https://image.tmdb.org/t/p/w500${props.movies.backdrop_path}` }}
                   />
 					</View>               
