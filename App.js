@@ -7,7 +7,7 @@ import MovieList from './src/components/MovieList';
 const App = () => {
 	return (
 		<View style={{ flex: 1, backgroundColor: '#010709' }}>
-			<Header title={'TMDB TOP MOVIES'} />
+			<Header />
 				<MovieList />
 		</View>
 	);
