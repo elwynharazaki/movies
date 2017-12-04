@@ -20,7 +20,7 @@ const styles = {
    textStyle: {
       color: '#85A4AF',
       fontSize: 25,
-      padding: 5
+      padding: 8
    }
 };
 
